@@ -1,33 +1,78 @@
-/* Add any custom styles here */
+body {
+  background-color: #333;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
 .grid-container {
-    display: grid;
-    width: 40%;
-    height: auto;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 10px;
-  }
-  
-  .card {
-    width: 100px;
-    height: 150px;
-    background-color: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  .flipped {
-    background-color: #00bfa5;
-    color: white;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  button {
-    margin-top: 20px;
-  }
-  
+  height: 50vh;
+  display: grid;
+  width: 60%;
+  height: auto;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #e0e0e0;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.flipped {
+  background-color: #00bfa5;
+  color: white;
+  border-color: #00796b;
+}
+
+.hidden {
+  display: none;
+}
+
+#win-message {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #00bfa5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #00796b;
+}
