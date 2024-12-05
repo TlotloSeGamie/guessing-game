@@ -3,10 +3,10 @@ const fs = require('fs');
 const path = require('path');
 
 const hostname = '127.0.0.1';
-const port = 3001;
+const port = 3007;
 
 const server = http.createServer((req, res) => {
-  let filePath = '.' + (req.url === '/' ? '/card.html' : req.url);  // Updated to point to card.html
+  let filePath = '.' + (req.url === '/' ? '/card.html' : req.url);  
   const extname = String(path.extname(filePath)).toLowerCase();
   const mimeTypes = {
     '.html': 'text/html',

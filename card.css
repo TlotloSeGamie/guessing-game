@@ -1,53 +1,58 @@
 body {
-  background-color: #333;
-  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f7f7f7;
   margin: 0;
   padding: 20px;
+  color: #fff;
 }
 
 h1 {
-  color: #333;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: bold;
   margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .grid-container {
-  height: 50vh;
   display: grid;
-  width: 60%;
-  height: auto;
   grid-template-columns: repeat(6, 1fr);
-  gap: 15px;
-  margin: 0 auto;
+  gap: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 800px;
 }
 
 .card {
   width: 100px;
   height: 100px;
-  background-color: #e0e0e0;
+  background-color: #ffffff;
   border: 2px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+  font-weight: bold;
+  color: #333;
   cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
+  background-color: #f0f0f0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .flipped {
-  background-color: #00bfa5;
+  background-color: #00c6ff;
   color: white;
-  border-color: #00796b;
+  border-color: #0073e6;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .hidden {
@@ -56,23 +61,26 @@ h1 {
 
 #win-message {
   margin-top: 20px;
-  font-size: 1.5rem;
-  color: #4caf50;
+  font-size: 1.8rem;
+  color: #ffeb3b;
   font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  background-color: #00bfa5;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #00bfa5, #00796b);
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
   margin-top: 20px;
 }
 
 button:hover {
-  background-color: #00796b;
+  background: linear-gradient(135deg, #00796b, #005b4f);
+  transform: scale(1.05);
 }
